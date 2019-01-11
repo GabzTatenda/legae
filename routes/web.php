@@ -11,6 +11,17 @@ Route::get('/adminPanel',function()
 
 Route::resource('/','MainController');
 
+<<<<<<< HEAD
+=======
+Route::get('/', 'PagesController@index');
+Route::get('/dash', 'PagesController@admin');
+Route::get('/CRUD student', 'PagesController@crudstdnt');
+Route::get('/CRUD teacher', 'PagesController@crudtr');
+Route::get('/CRUD admin', 'PagesController@crudad');
+Route::get('/CRUD class', 'PagesController@crudcl');
+
+
+>>>>>>> First commit
 // Route::group(['middleware'=>['auth']], function()
 // {
 //     //Gateway to the app
